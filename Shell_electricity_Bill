@@ -15,4 +15,4 @@ bill=$((units*180))
 else 
 bill=$((units*200))
 fi
-echo "ypur total bill is $bill"
+echo "dear $name your total bill is $bill"
