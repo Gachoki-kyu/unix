@@ -1,1 +1,18 @@
 # this is a shell program to calculate the electricity bill and dispaly to the customer
+echo "please enter your CustomeId"
+read id
+echo "enter your name"
+read name
+echo "please enter units consumed"
+read units
+if[$units -le 199]; then
+bill=$((units*200))
+
+elif[$units -ge 200] && [$units -lt 400]; then
+bill=$((units*150))
+elif[$units -ge 400] && [$units -lt 600]; then
+bill=$((units*180))
+else 
+bill=$((units*200))
+fi
+echo "ypur total bill is $bill"
